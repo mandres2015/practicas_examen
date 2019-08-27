@@ -1,0 +1,106 @@
+.navbar-top {
+  height: 64px;
+  background-color: rgba(0, 0, 255, 0.2);
+  border: 0;
+}
+
+.group {
+  display: flex;
+}
+
+.menu-left {
+  min-height: calc(100vh - 64px);
+  width: 300px;
+  background-color: #efefef;
+  border-left: 1px solid #efefef;
+}
+
+.icon {
+  width: 32px;
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+.notification {
+  /* background-color: rgba(255, 255, 255, .5);
+    border-radius: 100%;
+    font-size: 12px;
+    padding: 4px; */
+  border-radius: 0.8em;
+  -moz-border-radius: 0.8em;
+  -webkit-border-radius: 0.8em;
+  color: #ffffff;
+  font-weight: bold;
+  margin-left: 4px;
+}
+
+.menu-nots{
+    position: absolute;
+    right: 0;
+    top: 64px;
+    background-color: #efefef;
+    border: 1px solid gainsboro;
+}
+
+.list-nots{
+    display: none;
+    min-height: 64px;
+    max-height: 128px;
+    width: 300px;
+    text-align: center;
+    margin: 0;
+    background-color: #efefef;
+}
+
+.cnt-not{
+    padding: 12px;
+    cursor: pointer;
+    max-height: 64px;
+}
+
+.cnt-not:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.content {
+  min-height: calc(100vh - 64px);
+  width: calc(100vw - 300px);
+  background-color: #efef00;
+}
+
+.search-bar {
+  width: 500px;
+  cursor: pointer;
+}
+
+.menu-left a {
+  display: block;
+  padding: 16px;
+  color: black;
+  font-weight: 300;
+}
+
+.menu-left a:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+}
+
+.options {
+  display: none;
+}
+
+.card:hover .options {
+  display: block;
+  position: absolute;
+  background-color: rgba(25, 25, 25, 0.1);
+  height: 100%;
+  width: 100%;
+  padding: 16px;
+}
+
+.btn-options {
+  width: 50%;
+  margin-bottom: 16px;
+}

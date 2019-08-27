@@ -1,0 +1,29 @@
+<% include header %>
+
+<div class="container p-3">
+    <div class="row m-0">
+        <% for (let i = 0; i < carros.length; i++) { 
+        const carro = carros[i]; %>
+        <div id="<%= i %>" class="card col-4 p-0 mx-0">
+            <div class="options">
+                <input class="btn btn-info btn-options" type="button" value="Guardar" onclick="window.location.href='/';">
+                <input class="btn btn-info btn-options" type="button" value="Mensaje">
+            </div>
+            <img src="/img/<%= carro.img %>" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Carro seminuevo</h5>
+                <p class="card-text"><%= carro.precio %></p>
+            </div>
+        </div>
+        <% } %>
+    </div>
+</div>
+
+
+
+
+<!-- FIN DEL HEADER -->
+</div>
+</div>
+</div>
+<% include footer %>

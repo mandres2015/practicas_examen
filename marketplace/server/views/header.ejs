@@ -1,0 +1,80 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MARKETPLACE</title>
+    <link rel="stylesheet" href="/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+
+<body>
+
+    <div class="container-fluid m-0 p-0">
+        <div class="navbar-top d-flex align-items-center">
+            <span class="ml-4 h3 mb-0">MARKETPLACE</span>
+            <form class="m-auto search-bar" id="formSearchProduct" action="/search-product" method="GET">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Buscar productos" id="searchProduct">
+                    <div class="input-group-append">
+                        <button class="btn btn-secondary" type="button" id="btnSearchProduct">Buscar</button>
+                    </div>
+                </div>
+            </form>
+            <div class="ml-auto icons mr-4">
+                <img class="icon" src="/img/message.png" alt="bell" onclick="showNots()"><span class="notification">1</span>
+                <img class="icon" src="/img/bell.png" alt="bell"><span class="notification">1</span>
+            </div>
+            <div class="menu-nots">
+                <ul class="list-unstyled list-nots">
+                    <li class="cnt-not">
+                        <div>
+                            Ernesto ha comprado un nuevo carro
+                        </div>
+                    </li>
+                    <li class="cnt-not">
+                        <div>
+                            Ernesto ha comprado un nuevo carro
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="group">
+            <div class="menu-left">
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="/">EXPLORAR</a>
+                    </li>
+                    <li>
+                        <a href="/buy">COMPRA</a>
+                    </li>
+                    <li>
+                        <a href="/saved">GUARDADOS</a>
+                    </li>
+                    <li>
+                        <a href="/sale">VENTA</a>
+                    </li>
+                </ul>
+                <div class="d-flex mb-2">
+                    <span class="mx-auto text-dark font-weight-bold">CATEGORIAS</span>
+                </div>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#">ROPA</a>
+                    </li>
+                    <li>
+                        <a href="#">ACCESORIOS</a>
+                    </li>
+                    <li>
+                        <a href="#">TECNOLOGIA</a>
+                    </li>
+                    <li>
+                        <a href="#">OTROS</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content">
+                
